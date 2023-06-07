@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Medi Care</string>
+    <string name="hyperlink1">Search For An Online Solution                           <a href="https://www.webmd.com/cold-and-flu/cold-medicines-adults">Click Here</a></string>
+    <string name="hyperlink2">Search For An Online Solution                           <a href="https://www.webmd.com/first-aid/fever-in-adults-treatment">Click Here</a></string>
+    <string name="hyperlink3">Search For An Online Solution                           <a href="https://www.webmd.com/first-aid/abdominal-pain-in-adults-treatment">Click Here</a></string>
+    <string name="hyperlink4">Search For An Online Solution                           <a href="https://www.webmd.com/drugs/2/drug-157987/back-and-body-pain-reliever-oral/details">Click Here</a></string>
+    <string name="hyperlink5">Search For An Online Solution                           <a href="https://www.webmd.com/first-aid/understanding-insect-bites-spider-bites-treatment">Click Here</a></string>
+</resources>

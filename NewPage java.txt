@@ -1,0 +1,81 @@
+package com.example.medicare;
+
+import static android.widget.TextView.*;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class NewPage extends AppCompatActivity {
+
+    TextView cold;
+    TextView fever;
+    TextView body;
+    TextView stomach;
+    TextView insect;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_new_page);
+  cold = (TextView) findViewById(R.id.cold);
+       fever = (TextView) findViewById(R.id.fever);
+       body = (TextView) findViewById(R.id.body);
+       stomach = (TextView) findViewById(R.id.stomach);
+       insect = (TextView)findViewById(R.id.insect);
+        cold.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Code to execute when the TextView is clicked
+                Toast.makeText(getApplicationContext(), "Cold Info ", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(NewPage.this, Activity1.class);
+                startActivity(intent);
+            }
+        });
+        fever.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Code to execute when the TextView is clicked
+                Toast.makeText(getApplicationContext(), "Fver Info", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(NewPage.this, Activity2.class);
+                startActivity(intent);
+            }
+        });
+        stomach.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Code to execute when the TextView is clicked
+                Toast.makeText(getApplicationContext(), "Stomach Ache Info", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(NewPage.this, Activity3.class);
+                startActivity(intent);
+            }
+        });
+        body.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Code to execute when the TextView is clicked
+                Toast.makeText(getApplicationContext(), "Body Pain Info", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(NewPage.this, Activity4.class);
+                startActivity(intent);
+            }
+        });
+        insect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Code to execute when the TextView is clicked
+                Toast.makeText(getApplicationContext(), "Insect Bite Info", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(NewPage.this, Activity5.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+}
